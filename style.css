@@ -1,0 +1,106 @@
+.title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.action-button {
+    -fx-background-color: #007bff; /* Couleur bleue */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-font-size: 14px;
+    -fx-border-radius: 4px;
+}
+
+.question-list {
+    -fx-background-color: #f8f9fa; /* Couleur de fond gris clair */
+    -fx-border-color: #ced4da; /* Couleur de la bordure */
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+}
+.action-button {
+    -fx-background-color: #007bff; /* Couleur de fond */
+    -fx-text-fill: white; /* Couleur du texte */
+    -fx-min-width: 150px; /* Largeur minimale */
+    -fx-pref-width: 200px; /* Largeur préférée */
+    -fx-max-width: 300px; /* Largeur maximale */
+    -fx-min-height: 40px; /* Hauteur minimale */
+    -fx-pref-height: 40px; /* Hauteur préférée */
+    -fx-font-size: 16px; /* Taille de police */
+    -fx-border-radius: 5px; /* Rayon des coins */
+}
+
+.content-box {
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 20px;
+}
+
+.section-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 0;
+}
+
+.text-field {
+    -fx-pref-width: 200px;
+    -fx-padding: 5px;
+}
+
+.action-button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 40px;
+    -fx-font-size: 16px;
+    -fx-border-radius: 5px;
+}
+
+.action-button:hover {
+    -fx-background-color: #0056b3;
+}
+
+.table-view {
+    -fx-background-color: transparent; /* Fond transparent */
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #f5f5f5; /* Couleur de fond des en-têtes de colonnes */
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent; /* Fond transparent pour les en-têtes de colonnes */
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #333333; /* Couleur du texte des en-têtes de colonnes */
+    -fx-font-weight: bold; /* Texte en gras */
+}
+
+.table-row-cell {
+    -fx-background-color: transparent; /* Fond transparent pour les cellules */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f9f9f9; /* Couleur de fond des lignes impaires */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #cfe2f3; /* Couleur de fond des lignes sélectionnées */
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #f0f0f0; /* Couleur de fond au survol */
+}
+
+.table-row-cell .table-cell {
+    -fx-alignment: center; /* Alignement du contenu au centre */
+    -fx-padding: 5; /* Marge interne */
+}
+
+.table-view:focused .table-row-cell:selected .table-cell {
+    -fx-background-color: #cfe2f3; /* Couleur de fond des cellules sélectionnées en cas de focus */
+}
+
+.table-view .scroll-bar {
+    -fx-background-color: transparent; /* Fond transparent pour la barre de défilement */
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.easyquiz.GestionUtilisateursController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+    <center>
+        <VBox spacing="10" styleClass="content-box">
+            <Label text="Gestion des Utilisateurs" styleClass="section-title" />
+
+            <HBox spacing="10">
+                <Label text="Nom d'utilisateur:" />
+                <TextField fx:id="usernameField" />
+            </HBox>
+
+            <HBox spacing="10">
+                <Label text="Mot de passe:" />
+                <PasswordField fx:id="passwordField" />
+            </HBox>
+
+            <HBox spacing="10">
+                <Label text="Rôle:" />
+                <ChoiceBox fx:id="roleChoiceBox">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Admin" />
+                            <String fx:value="Enseignant" />
+                            <String fx:value="Étudiant" />
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+            </HBox>
+
+            <Button text="Ajouter Utilisateur" onAction="#ajouterUtilisateur"  styleClass="action-button"/>
+
+            <TableView fx:id="utilisateursTableView" styleClass="table-view">
+                <columns>
+                    <TableColumn fx:id="usernameColumn" text="Nom d'utilisateur" prefWidth="120" />
+                    <TableColumn fx:id="roleColumn" text="Rôle" prefWidth="120" />
+                </columns>
+            </TableView>
+            <Button text="Supprimer Utilisateur" onAction="#supprimerUtilisateur" styleClass="action-button" />
+        </VBox>
+    </center>
+</BorderPane>

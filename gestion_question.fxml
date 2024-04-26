@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.easyquiz.GestionQuestionsController" stylesheets="@style.css">
+    <center>
+        <VBox spacing="10" styleClass="content-box">
+            <Label text="Gestion des Questions" styleClass="section-title" />
+
+            <TextField fx:id="questionField" promptText="Question" styleClass="text-field" />
+            <TextField fx:id="reponseCorrectField" promptText="Réponse Correcte" styleClass="text-field" />
+            <TextField fx:id="reponse1Field" promptText="Réponse 1" styleClass="text-field" />
+            <TextField fx:id="reponse2Field" promptText="Réponse 2" styleClass="text-field" />
+            <TextField fx:id="reponse3Field" promptText="Réponse 3" styleClass="text-field" />
+            <TextField fx:id="coursField" promptText="Cours" styleClass="text-field" />
+
+            <Button text="Ajouter Question" onAction="#ajouterQuestion" styleClass="action-button" />
+
+            <TableView fx:id="questionsTableView" styleClass="table-view">
+                <columns>
+                    <TableColumn fx:id="questionColumn" text="Question" prefWidth="200" />
+                    <TableColumn fx:id="reponseCorrectColumn" text="Réponse Correcte" prefWidth="150" />
+                    <TableColumn fx:id="reponse1Column" text="Réponse 1" prefWidth="100" />
+                    <TableColumn fx:id="reponse2Column" text="Réponse 2" prefWidth="100" />
+                    <TableColumn fx:id="reponse3Column" text="Réponse 3" prefWidth="100" />
+                    <TableColumn fx:id="coursColumn" text="Cours" prefWidth="100" />
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>

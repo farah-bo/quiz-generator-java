@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?> <!-- Importer la classe Insets -->
+
+<BorderPane prefHeight="345.0" prefWidth="561.0" style="-fx-background-color: white; -fx-background-radius: 32px; -fx-border-radius: 32px;"
+            xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.easyquiz.HomeController">
+   <top>
+      <VBox style="-fx-background-color: #004AAD;">
+         <children>
+            <Button fx:id="backButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#logout" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #004AAD; -fx-text-fill: white;" text="Deconnecter" />
+
+            <Label text="QuizWiz" style="-fx-text-fill: white;">
+               <font>
+                  <Font name="Open Sans Extrabold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <padding> <!-- Définir les marges ici -->
+            <Insets top="10" right="10" bottom="10" left="10"/> <!-- Utiliser Insets pour spécifier les marges -->
+         </padding>
+      </VBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" spacing="20">
+         <Button fx:id="gestionCoursBtn" text="Gestion des cours" style="-fx-background-color: #004AAD; -fx-text-fill: white;"
+                 prefWidth="200" />
+         <Button fx:id="gestionUtilisateursBtn" text="Gestion utilisateurs" style="-fx-background-color: #004AAD; -fx-text-fill: white;"
+                 prefWidth="200" />
+         <Button fx:id="gestionClassesBtn" text="Gestion classes" style="-fx-background-color: #004AAD; -fx-text-fill: white;"
+                 prefWidth="200" />
+         <Button fx:id="gestionQuestionsBtn" text="Gestion des questions" style="-fx-background-color: #004AAD; -fx-text-fill: white;"
+                 prefWidth="200" />
+         <Button fx:id="gestionQuizBtn" text="Gestion Quiz" style="-fx-background-color: #004AAD; -fx-text-fill: white;"
+                 prefWidth="200" />
+         <Button fx:id="playquizbtn" text="Quiz1" style="-fx-background-color: #004AAD; -fx-text-fill: white; -fx-pref-width: 200px; -fx-alignment: center;" />
+         <Button fx:id="playquizbtn1" text="Quiz2" style="-fx-background-color: #004AAD; -fx-text-fill: white; -fx-pref-width: 200px; -fx-alignment: center;" />
+         <Button fx:id="playquizbtn2" text="Quiz3" style="-fx-background-color: #004AAD; -fx-text-fill: white; -fx-pref-width: 200px; -fx-alignment: center;" />
+         <Button fx:id="playquizbtn3" text="Qui4" style="-fx-background-color: #004AAD; -fx-text-fill: white; -fx-pref-width: 200px; -fx-alignment: center;" />
+         <Button fx:id="playquizbtn4" text="Quiz5" style="-fx-background-color: #004AAD; -fx-text-fill: white; -fx-pref-width: 200px; -fx-alignment: center;" />
+
+
+
+      </VBox>
+   </center>
+</BorderPane>

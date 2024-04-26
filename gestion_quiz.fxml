@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.easyquiz.GestionQuizController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+    <children>
+        <Label layoutX="40.0" layoutY="20.0" text="Gestion des Quiz" styleClass="title-label" />
+
+        <Label layoutX="40.0" layoutY="70.0" text="Cours :" />
+        <TextField fx:id="coursField" layoutX="120.0" layoutY="70.0" />
+
+        <Label layoutX="40.0" layoutY="110.0" text="Niveau de difficulté :" />
+        <TextField fx:id="niveauField" layoutX="160.0" layoutY="110.0" />
+
+        <Label layoutX="40.0" layoutY="150.0" text="Nombre de questions :" />
+        <TextField fx:id="nombreQuestionsField" layoutX="180.0" layoutY="150.0" />
+
+        <Button layoutX="250.0" layoutY="190.0" mnemonicParsing="false" onAction="#selectQuestions" text="Sélectionner Questions" styleClass="action-button" />
+
+        <ListView fx:id="questionsListView" layoutX="40.0" layoutY="230.0" prefHeight="120.0" prefWidth="520.0" styleClass="question-list" />
+
+        <Button layoutX="250.0" layoutY="360.0" mnemonicParsing="false" onAction="#createQuiz" text="Créer Quiz" styleClass="action-button" />
+
+    </children>
+</AnchorPane>

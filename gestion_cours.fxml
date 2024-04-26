@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import java.net.URL?>
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.easyquiz.GestionCoursController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+    <center>
+        <SplitPane dividerPositions="0.5" orientation="VERTICAL">
+            <items>
+                <VBox spacing="10" styleClass="content-box">
+                    <Label text="Ajout de Cours" styleClass="title-label" />
+                    <TextField fx:id="nomCoursField" promptText="Nom du Cours" styleClass="text-field"  />
+                    <TextField fx:id="niveauField" promptText="Niveau" styleClass="text-field"  />
+                    <TextField fx:id="classeField" promptText="Classe" styleClass="text-field" />
+                    <TextArea fx:id="contenuField" promptText="Contenu du Cours" styleClass="text-area" />
+                    <Button text="Ajouter" onAction="#ajouterCours" styleClass="action-button" />
+                </VBox>
+                <TableView fx:id="coursTableView" styleClass="table-view">
+                    <columns>
+                        <TableColumn fx:id="nomCoursColumn" text="Nom du Cours" prefWidth="200" />
+                        <TableColumn fx:id="niveauColumn" text="Niveau" prefWidth="100" />
+                        <TableColumn fx:id="classeColumn" text="Classe" prefWidth="100" />
+                    </columns>
+                </TableView>
+
+            </items>
+        </SplitPane>
+    </center>
+</BorderPane>

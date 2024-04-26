@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.easyquiz.GestionClasseController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+    <center>
+        <VBox spacing="10" styleClass="content-box">
+            <Label text="Gestion des classes" styleClass="title-label" />
+
+            <HBox spacing="10">
+                <Label text="nom:" />
+                <TextField fx:id="nomField" styleClass="text-field" />
+            </HBox>
+
+            <HBox spacing="10">
+                <Label text="Nombre Eleve:" />
+                <TextField fx:id="nbrElevesField" />
+            </HBox>
+
+
+            <Button text="Ajouter" onAction="#ajouterClasse" styleClass="action-button" />
+
+            <TableView fx:id="classeTableView" styleClass="table-view">
+                <columns>
+                    <TableColumn fx:id="idColumn" text="ID" prefWidth="120" />
+                    <TableColumn fx:id="nomClasseColumn" text="Nom Classe" prefWidth="200" />
+                    <TableColumn fx:id="nbrElevesColumn" text="Nombre Eleves" prefWidth="150" />
+
+                </columns>
+            </TableView>
+            <Button text="Supprimer" onAction="#supprimerQuestion"  styleClass="action-button"/>
+        </VBox>
+    </center>
+</BorderPane>
